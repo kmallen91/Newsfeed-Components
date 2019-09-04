@@ -165,3 +165,8 @@ function createArticle(title, date, firstParagraph, secondParagraph, thirdParagr
 data.forEach( e =>{
   articles.appendChild(createArticle(e.title, e.date, e.firstParagraph, e.secondParagraph, e.thirdParagraph))
 });
+
+TweenMax.to('h1', 2, {
+  rotation:360,
+  scale:1.5
+});
